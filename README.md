@@ -131,4 +131,4 @@ See `TimeSlip-iOS/SIGNING-ON-MAC-MINI.txt`.
 
 ## License
 
-Use and modify for your own billing / timekeeping. Add a `LICENSE` file before you publish if you want an explicit open-source license (MIT is a reasonable default).
+See License file.
