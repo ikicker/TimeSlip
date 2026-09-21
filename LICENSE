@@ -1,21 +1,68 @@
-MIT License
+TimeSlip Restricted License
+Copyright (c) 2026 TimeSlip authors
 
-Copyright (c) 2026 inner_ninja_7
+Permission is granted to a natural person to use, copy, and modify
+TimeSlip on machines they control for their own timekeeping and billing,
+subject to all of the following conditions.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. No clean-room use
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+   This software, its source, its documentation, and any portion of them
+   may not be used in a clean-room process.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+   That includes clean-room design, clean-room reverse engineering,
+   clean-room reimplementation, and any workflow where one person or
+   system studies this work and another person or system produces a
+   separate implementation from a specification, notes, or description
+   derived from this work.
+
+   You may not use this project as the "contaminated" or "unclean"
+   reference in a clean-room effort, and you may not use it as the
+   specification fed to a clean-room team.
+
+2. No use by AI
+
+   This software, its source, its documentation, and any portion of them
+   may not be used by an AI system.
+
+   "AI system" includes generative models, large language models,
+   machine-learning models, autonomous coding agents, and any software
+   that generates, completes, embeds, trains on, fine-tunes on, or
+   otherwise produces code or text from examples.
+
+   Without limitation, the following are not permitted:
+   - training, fine-tuning, or evaluating an AI system on this work
+   - including this work in a pretraining, instruction, or RAG corpus
+   - prompting an AI system with this work in order to reproduce,
+     adapt, or generate a substitute
+   - an AI system reading, executing, modifying, or distributing this
+     work on its own behalf
+
+   A natural person may read and edit this work directly. An AI system
+   may not.
+
+3. No separate commercial relicensing
+
+   You may use this software for your own work tracking, including
+   work you bill to clients. You may not sell, sublicense, or rebrand
+   this software as a product or service of your own.
+
+4. Notices
+
+   You must keep this license text and the copyright notice in all
+   copies and substantial portions of the software.
+
+5. No trademark
+
+   This license does not grant rights in the name "TimeSlip".
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+If any condition in this license is unenforceable, the remaining
+conditions still apply.
