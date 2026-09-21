@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0E1016" />
+  <title>TimeSlip — Work Timer</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="14" cy="16" r="8" stroke="#E8A838" stroke-width="2"/>
+            <path d="M14 12v4l3 2" stroke="#E8A838" stroke-width="2" stroke-linecap="round"/>
+            <rect x="17" y="17" width="10" height="11" rx="2" fill="#E8A838"/>
+          </svg>
+        </div>
+        <div>
+          <h1>TimeSlip</h1>
+          <p>Python backend · work timer + Excel export</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="timerView">
+      <div class="timer-card">
+        <div class="status">
+          <span class="dot" id="statusDot"></span>
+          <span id="statusText">Ready</span>
+        </div>
+        <div class="clock" id="clock">00:00<small>:00</small></div>
+        <div class="meta" id="meta">Add a comment, then start the timer</div>
+        <textarea class="comment" id="comment" maxlength="240" placeholder="What work is being done? e.g. Client site — homepage revisions"></textarea>
+        <div class="row">
+          <button class="btn btn-primary" id="startBtn">Start</button>
+          <button class="btn btn-stop hidden" id="stopBtn">Stop &amp; save</button>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><span>Today</span><b id="statToday">00:00:00</b></div>
+        <div class="stat"><span>7 days</span><b id="statWeek">00:00:00</b></div>
+        <div class="stat"><span>All time</span><b id="statAll">00:00:00</b></div>
+      </div>
+    </section>
+
+    <section id="logView" class="hidden">
+      <div class="section-head">
+        <h2>Sessions</h2>
+        <button id="clearAll" type="button">Clear all</button>
+      </div>
+      <div id="sessions"></div>
+    </section>
+
+    <section id="exportView" class="hidden">
+      <div class="section-head"><h2>Excel report</h2></div>
+      <div class="session">
+        <div class="field">
+          <label for="rateInput">Hourly rate (optional)</label>
+          <input id="rateInput" type="number" min="0" step="0.01" placeholder="e.g. 85" />
+        </div>
+        <div class="field">
+          <label for="exportFrom">From date</label>
+          <input id="exportFrom" type="date" />
+        </div>
+        <div class="field">
+          <label for="exportTo">To date</label>
+          <input id="exportTo" type="date" />
+        </div>
+        <p class="times">Leave dates blank to export every saved session. The spreadsheet includes work comment, start time, end time, duration, and hours to bill.</p>
+        <div class="row">
+          <button class="btn btn-primary" id="exportBtn">Export to Excel</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="sheet" id="editSheet">
+    <div class="sheet-card">
+      <h3>Edit session</h3>
+      <div class="field">
+        <label>Work comment</label>
+        <textarea id="editComment" rows="3"></textarea>
+      </div>
+      <div class="field">
+        <label>Start time</label>
+        <input id="editStart" type="datetime-local" />
+      </div>
+      <div class="field">
+        <label>End time</label>
+        <input id="editEnd" type="datetime-local" />
+      </div>
+      <div class="row">
+        <button class="btn btn-ghost" id="closeEdit">Cancel</button>
+        <button class="btn btn-primary" id="saveEdit">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="dock">
+    <button data-tab="timer" class="active">Timer</button>
+    <button data-tab="log">Log</button>
+    <button data-tab="export">Export</button>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
