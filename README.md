@@ -1,8 +1,11 @@
 # TimeSlip
 
+
 Local work timer for logging what you worked on, when it started, when it ended, and how many hours to bill. Export the log to Excel.
 
 TimeSlip runs on your Mac. Sessions stay in a local SQLite file. Nothing is uploaded.
+<img width="497" height="871" alt="Screen Shot 2026-09-27 at 6 03 54 PM" src="https://github.com/user-attachments/assets/a6c49579-3ab3-4704-a177-2d0bde4765e4" />
+<img width="517" height="870" alt="Screen Shot 2026-09-27 at 6 04 25 PM" src="https://github.com/user-attachments/assets/8ecf49e0-56ed-423c-a487-5a35154ef78f" />
 
 ## Features
 
